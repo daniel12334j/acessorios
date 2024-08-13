@@ -1,0 +1,98 @@
+.convite{
+    background: linear-gradient(120deg, rgba(163, 68, 142, 0.329)35%, rgba(0, 255, 255, 0.39) );
+    height: 100vh;
+    &__container{
+        align-items: center;
+        padding-top: 64px;
+        
+
+        &--cards{
+            display: grid;
+            grid-template-columns:1fr 1fr ;
+            grid-template-rows: auto;
+            padding-top: 20vh;
+            gap: 50px;
+            justify-content: center;
+            
+
+            &-itens{
+                align-items: center;
+                ul{
+                    list-style-type: none; /* Remove os marcadores da lista */
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        h2{
+                            text-align: center;
+                            margin: 15px auto !important;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            color: rgb(173, 83, 158);
+                        }
+                    }
+                }
+            }
+            img{
+                width: 300px !important;
+                height: 300px;
+                border-radius: 20%;
+                transition: 0.5s ease;
+                cursor: pointer;
+                box-shadow: 0 0 5px 7px rgba(100, 100, 100, 0.397);
+
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.397);
+                }
+            }
+
+            p{
+                width: 300px;
+                font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width:640px){
+    .convite{
+        height: 120vh;
+        &__container{
+            padding-top: 50px;
+            &--cards{
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                &-itens{
+                    ul{
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                                align-items: center  !important;
+                                justify-content: center !important;
+                            h2{
+                                text-align: center;
+                                margin: 15px auto !important;
+
+                            }
+
+                            img{
+                                display: flex;
+                                align-items: center  !important;
+                                justify-content: center !important;
+                                width: 200px !important;
+                                height: 200px;
+            
+                            }
+
+                            p{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
